@@ -2,6 +2,7 @@ Installation :
 -install pip install beautifulsoup4 and pip install google
 -Never install the pip install googlesearch-python python package
 
+
 Version Parameters :
 query : query string that we want to search for.
 tld : tld stands for top level domain which means we want to search our result on google.com or google.in or some other domain.
@@ -11,4 +12,36 @@ start : First result to retrieve.
 stop : Last result to retrieve. Use None to keep searching forever.
 pause: Lapse to wait between HTTP requests. Lapse too short may cause Google to block your IP. Keeping significant lapse will make your program slow but its safe and better option.
 Return : Generator (iterator) that yields found URLs. If the stop parameter is None the iterator will loop forever.
+
+
+Parser :
+A parser is a program that is part of the compiler, and parsing is part of the compiling process. Parsing happens during the analysis stage of compilation. In parsing, code is taken from the preprocessor, broken into smaller pieces and analyzed so other software can understand it. The parser does this by building a data structure out of the pieces of input. More specifically, a person writes code in a human-readable language like C++ or Java and saves it as a series of text files. The parser takes those text files as input and breaks them down so they can be translated on the target platform. The parser consists of three components, each of which handles a different stage of the parsing process.
+
+
+Beautiful Soup :
+Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+eg:- from bs4 import BeautifulSoup
+     soup = BeautifulSoup(html_doc, 'html.parser')
+     soup.title
+     ->  # <title>The Dormouse's story</title>
+     soup.title.name
+     ->  # u'title'
+
+
+Request :
+An HTTP request is made from a client to a host located on the server in order to receive a resource needed to build the content.When they make a request, clients use a URL (Uniform Resource Locator) that contains the information needed to access the server resources.
+
+
+Various request methods :
+GET-Perhaps the most popular HTTP request method, GET is used to retrieve data from a specific server.
+
+HEAD-Similar to the GET method, this technique won’t have a message in the body. Usually, the HEAD request is used when trying to assess the availability of an API endpoint.
+
+POST-POST is another popular HTTP request method. You use POST when you want to send information to the server to either create or update a resource using the information stored in the body of the HTTP request.
+
+PUT-Similar to how the POST method works, PUT will update or create a resource. However, the difference is that the PUT requests are idempotent, which means that the result will stay the same regardless of how many times you call the PUT request.
+
+DELETE-The DELETE method allows you to delete a particular resource on the server.
+
+PATCH-Similar to the PUT and POST requests, PATCH will update the information of the server, but unlike the two,  PATCH will apply a partial modification. You want to use PATCH when changing just the title of the product entry.
 
