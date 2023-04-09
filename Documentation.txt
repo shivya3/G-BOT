@@ -45,3 +45,22 @@ DELETE-The DELETE method allows you to delete a particular resource on the serve
 
 PATCH-Similar to the PUT and POST requests, PATCH will update the information of the server, but unlike the two,  PATCH will apply a partial modification. You want to use PATCH when changing just the title of the product entry.
 
+HTML:
+It is hypertext markup language, a formatting system for displaying material retrieved over the Internet. Each retrieval unit is known as a Web page (from World Wide Web), and such pages frequently contain hypertext links that allow related pages to be retrieved.
+
+lxml:
+It is the most feature-rich and easy-to-use library for processing XML and HTML in the Python language.
+
+The normal HTML parser is capable of handling broken HTML, but for pages that are far enough from HTML to call them 'tag soup', it may still fail to parse the page in a useful way. A way to deal with this is ElementSoup, which deploys the well-known BeautifulSoup parser to build an lxml HTML tree. In web development, "tag soup" is a pejorative for syntactically or structurally incorrect HTML written for a web page.
+
+Eg:
+tree = html.fromstring(page.content)
+soup = BeautifulSoup(page.content, features="lxml")
+
+
+This code appears to be written in Python and is likely used to extract information from HTML web pages.
+The first line imports the html module from the lxml library and uses its fromstring() method to create an HTML tree object from the contents of the page variable. This HTML tree can be used to extract information from the HTML document.
+The second line imports the BeautifulSoup class from the bs4 (BeautifulSoup4) library and uses it to create a BeautifulSoup object from the page variable. The features="lxml" argument tells BeautifulSoup to use the lxml parser to parse the HTML content of the page variable. The BeautifulSoup object can be used to navigate the HTML document and extract information from it using a variety of methods.
+
+Speech Recognition
+Library for performing speech recognition, with support for several engines and APIs, online and offline.
